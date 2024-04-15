@@ -2,7 +2,7 @@ class Solution {
     public int solution(int[] stones, int k) {
         int result = 0;
         int left = 0;
-        int right = Integer.MAX_VALUE;
+        int right = 200_000_000;
 
         while (left <= right) {
             int mid = (left + right) / 2;
@@ -22,7 +22,7 @@ class Solution {
         int step = 0;
         for (int stone : stones) {
             if (step >= k) {
-                break;
+                return false;
             }
 
             if (stone < mid) {
