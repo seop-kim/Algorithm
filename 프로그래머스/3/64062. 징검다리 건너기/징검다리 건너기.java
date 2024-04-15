@@ -22,7 +22,7 @@ class Solution {
         int step = 0;
         for (int stone : stones) {
             if (step >= k) {
-                continue;
+                break;
             }
 
             if (stone < mid) {
