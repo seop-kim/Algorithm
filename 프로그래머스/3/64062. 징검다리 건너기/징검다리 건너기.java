@@ -9,7 +9,6 @@ class Solution {
             if (crossCheck(stones, k, mid)) {
                 left = mid + 1;
                 result = mid;
-                
             } else {
                 right = mid - 1;
             }
